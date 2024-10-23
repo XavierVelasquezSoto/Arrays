@@ -18,32 +18,22 @@ const mediaNum = array => {
     const sum = array[0] + array[1] + array[2]
     const average = sum / 3
 
-
-mediaNum([4,5,16])
-console.log(`La suma de todos los números es: ${sum}`)
-mediaNum([4,5,16])
-console.log(`La media de todos los números es: ${average}`)
-mediaNum([4,5,16])
-console.log(`El mayor es ${mediaNum[2]} y el menor es ${mediaNum[0]}`)  //pendiente revisar
+    console.log(`La suma de todos los números es: ${sum}`)
+    console.log(`La media de todos los números es: ${average}`)
+    console.log(`El mayor es ${array[2]} y el menor es ${array[0]}`)
 }
+mediaNum([4,5,16])
+
+
 
 //3 - Crea una función que reciba un array con 5 números del 0 al 10 (a tu elección). Dentro de la función genera un número aleario entre 0 y 10. La función deberá decir si el array contiene ese número y en qué posición está o si no lo contiene.
 
 const numRandom = array => {
-   const random1 = Math.floor(Math.random() * array[0])
-   const random2 = Math.floor(Math.random() * array[1])
-   const random3 = Math.floor(Math.random() * array[2])
-   const random4 = Math.floor(Math.random() * array[3])
-   const random5 = Math.floor(Math.random() * array[4])
-   
-   
+   const random1 = Math.floor(Math.random() * array[0])   
 
 const resultNumRandom1 = numRandom([2,4,6,8,10])
 console.log(`${resultNumRandom1}`)
-const resultNumRandom2 = numRandom([2,4,6,8,10])
-console.log(`${resultNumRandom2}`)
-const resultNumRandom3 = numRandom([2,4,6,8,10])
-console.log(`${resultNumRandom3}`)
+
 }
 
 //4 - Crea una función que reciba un array vacío y lo devuelva con 3 números aleatorios entre 0 y 100.
@@ -79,10 +69,10 @@ console.log(resultReverse);
 
 const threeArrays = array => {
 
-    return `${array[0]}, ${array[1]}, ${array[2]}`
+    
 }
 const resultthreeArray = threeArrays(["hola", "adios", "cielo"])
-console.log(resultthreeArray.toUpperCase())
+console.log(resultthreeArray)
 
 
 /* const threeArrays = array => {
