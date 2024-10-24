@@ -156,23 +156,28 @@ console.log(resultinitialArray);
 
 //7 - Crea una función que reciba un array con 3 números y te diga cuántos números pares tiene ese array.
 
-/* const numArray = array => {
-  return;
-};
-const resultNumArray = numArray([2, 5, 7]);
-console.log(resultNumArray); */
+/* const threePairs = array => {
+  const threeNumbers = array[0].charAt(0);
+  let random = threeNumbers 
 
-const threePairs = array => {};
+  return ` ${random} `;
+};
+
+const resultThreePairs = [8, 6, 5];
+console.log(resultThreePairs); */
 
 //8 - Crea una función que reciba un array con 3 números y devuelva un nuevo array con los mismos números pero en orden inverso.
 
-/* const arrayReverse = array => {
-    
-    return `${array[2]}, ${array[1]}, ${array[0]}`
-}
+const arrayReverse = array => {
+  const inverse = [];
+  inverse.push(array[2]);
+  inverse.push(array[1]);
+  inverse.push(array[0]);
+  return inverse;
+};
 
-const resultReverse = arrayReverse([1, 2, 3])
-console.log(resultReverse); */
+const resultReverse = arrayReverse([1, 2, 3]);
+console.log(resultReverse);
 
 //9 - Crea una función que reciba un array con 3 palabras y devuelva un nuevo array con las mismas palabras pero en mayúsculas.
 
