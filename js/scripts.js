@@ -14,6 +14,16 @@ console.log(resultRandomNum);
   - "El mayor es [mayor] y el menor es [menor]"
  */
 
+const higestAndLowest = (numA, numB, numC) => {
+  const mayor = Math.max(numA, numB, numC); //Math.max  calcula el número maximo
+  const minus = Math.min(numA, numB, numC); //Math.min  calcula el número minimo
+  
+  console.log(`El mayor es ${mayor}`);
+  console.log(`El menor es ${minus}`);
+};
+  
+  higestAndLowest(1, 2, 3);
+
 /* const mediaNum = array => {
     const sum = array[0] + array[1] + array[2]
     const average = sum / 3
@@ -52,15 +62,7 @@ mediaNum([4,5,16]) */
 
 higestAndLowest(1, 2, 3); */ // este es uno de los caminos largos
 
-const higestAndLowest = (numA, numB, numC) => {
-  const mayor = Math.max(numA, numB, numC); //Math.max  calcula el número maximo
-  const minus = Math.min(numA, numB, numC); //Math.min  calcula el número minimo
 
-  console.log(`El mayor es ${mayor}`);
-  console.log(`El menor es ${minus}`);
-};
-
-higestAndLowest(1, 2, 3);
 
 //3 - Crea una función que reciba un array con 5 números del 0 al 10 (a tu elección). Dentro de la función genera un número aleario entre 0 y 10. La función deberá decir si el array contiene ese número y en qué posición está o si no lo contiene.
 
