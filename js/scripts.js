@@ -66,6 +66,17 @@ higestAndLowest(1, 2, 3); */ // este es uno de los caminos largos
 
 //3 - Crea una función que reciba un array con 5 números del 0 al 10 (a tu elección). Dentro de la función genera un número aleario entre 0 y 10. La función deberá decir si el array contiene ese número y en qué posición está o si no lo contiene.
 
+const arrayContainsRandomNumber = number => {
+  const randomNumber = Math.floor(Math.random() * 11);
+
+  if (number.includes(randomNumber)) {
+    console.log(`El número ${randomNumber} está en el array en la posición ${number.indexOf(randomNumber)}`);
+  } else {
+    console.log(`El número ${randomNumber} no está en el array`);
+  }
+};
+arrayContainsRandomNumber([1, 2, 3, 4, 5]);
+
 /* const numRandom = array => {
   const random1 = Math.floor(Math.random() * 11);
   const random2 = array.indexOf(random1);
@@ -81,16 +92,7 @@ higestAndLowest(1, 2, 3); */ // este es uno de los caminos largos
 const resultNumRandom1 = numRandom([2, 4, 6, 8, 10]);
 console.log(`${resultNumRandom1}`); */
 
-const arrayContainsRandomNumber = number => {
-  const randomNumber = Math.floor(Math.random() * 11);
 
-  if (number.includes(randomNumber)) {
-    console.log(`El número ${randomNumber} está en el array en la posición ${number.indexOf(randomNumber)}`);
-  } else {
-    console.log(`El número ${randomNumber} no está en el array`);
-  }
-};
-arrayContainsRandomNumber([1, 2, 3, 4, 5]);
 
 //4 - Crea una función que reciba un array vacío y lo devuelva con 3 números aleatorios entre 0 y 100.
 
