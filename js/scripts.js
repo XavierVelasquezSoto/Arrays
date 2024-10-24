@@ -181,10 +181,13 @@ console.log(resultReverse);
 
 //9 - Crea una función que reciba un array con 3 palabras y devuelva un nuevo array con las mismas palabras pero en mayúsculas.
 
-/* const threeArrays = array => {
+const threeArrays = array => {
   let add = [];
+  add.push(array[0].toUpperCase());
+  add.push(array[1].toUpperCase());
+  add.push(array[2].toUpperCase());
 
-  return add[0] + ' ' + add[1] + ' ' + add[2];
+  return add;
 };
 const resultthreeArray = threeArrays(['hola', 'adios', 'cielo']);
-console.log(resultthreeArray); */
+console.log(resultthreeArray);
