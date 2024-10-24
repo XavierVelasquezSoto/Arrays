@@ -156,15 +156,24 @@ console.log(resultinitialArray);
 
 //7 - Crea una función que reciba un array con 3 números y te diga cuántos números pares tiene ese array.
 
-/* const threePairs = array => {
-  const threeNumbers = array[0].charAt(0);
-  let random = threeNumbers 
+const threePairs = array => {
+  let random = 0;
+    if(array[0] % 2 === 0){
+      random++
+    }
 
-  return ` ${random} `;
+    if(array[1] % 2 === 0){
+      random++
+    }
+
+    if(array[2] % 2 === 0){
+      random++
+    }
+    return random
 };
 
-const resultThreePairs = [8, 6, 5];
-console.log(resultThreePairs); */
+const resultThreePairs = threePairs([8, 6, 5]);
+console.log(resultThreePairs);
 
 //8 - Crea una función que reciba un array con 3 números y devuelva un nuevo array con los mismos números pero en orden inverso.
 
